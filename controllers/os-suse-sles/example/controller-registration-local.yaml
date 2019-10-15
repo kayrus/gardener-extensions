@@ -1,0 +1,12 @@
+apiVersion: core.gardener.cloud/v1alpha1
+kind: ControllerRegistration
+metadata:
+  name: os-suse-sles
+spec:
+  resources:
+  - kind: OperatingSystemConfig
+    type: suse-sles
+  deployment:
+    type: helm
+    providerConfig:
+      chart: H4sICI+bpV0AA3Rnei50YXIA7dRBS8MwFAfwnvspHru3TdYlg91Ehx68Fb2H9cmKTVuSdNhvb1tQlMF6cCDi/3dJXhLyIHlJ6xPfe058zT4pe2uH7PZoXEgHY+voOsRoq9TUyq0SX9vZWupI5krJXKpcj+Nyo/NNROJK+S/qfTCOKHo1w8V1S/N/lOmqZ3a+apsdnWRsuu4zXMlUrOKS/cFVXZiHbuhuKhF64NrSYaoTemkdhSPTvXElN+yoeCr2VDzuC+K3wM20V9wYyztqz2otPn0kE+mYLf7t0/h/zu8kC2y72gT22Rz//CdYev+j732ptVrj/QMAAAAAAAAAAAAAAAAAAAAALHkH05sKVQAoAAA=

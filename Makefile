@@ -105,6 +105,15 @@ start-os-suse-jeos:
 		--ignore-operation-annotation=$(IGNORE_OPERATION_ANNOTATION) \
 		--leader-election=false
 
+.PHONY: start-os-suse-sles
+start-os-suse-sles:
+	@LEADER_ELECTION_NAMESPACE=garden GO111MODULE=on go run \
+		-mod=vendor \
+		-ldflags $(LD_FLAGS) \
+		./controllers/os-suse-sles/cmd/gardener-extension-os-suse-sles \
+		--ignore-operation-annotation=$(IGNORE_OPERATION_ANNOTATION) \
+		--leader-election=false
+
 .PHONY: start-os-coreos-alicloud
 start-os-coreos-alicloud:
 		@LEADER_ELECTION_NAMESPACE=garden GO111MODULE=on go run \
